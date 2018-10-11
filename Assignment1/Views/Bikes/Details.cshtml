@@ -1,0 +1,43 @@
+﻿@model Assignment1.Models.Bike
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bike</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bike1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bike1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bike2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bike2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bike3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bike3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Bikes }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
