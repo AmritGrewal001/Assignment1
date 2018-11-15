@@ -10,6 +10,7 @@ using Assignment1.Models;
 
 namespace Assignment1.Controllers
 {
+    [Authorize]
     public class BikesController : Controller
     {
         private Model1 db = new Model1();
@@ -21,6 +22,7 @@ namespace Assignment1.Controllers
         }
 
         // GET: Bikes/Details/5
+        [AllowAnonymous]
         public ActionResult Details(int? id)
         {
             if (id == null)

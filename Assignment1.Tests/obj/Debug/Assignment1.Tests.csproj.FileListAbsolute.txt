@@ -54,3 +54,5 @@ c:\users\canada\documents\visual studio 2015\Projects\Assignment1\Assignment1.Te
 c:\users\canada\documents\visual studio 2015\Projects\Assignment1\Assignment1.Tests\obj\Debug\Assignment1.Tests.csprojResolveAssemblyReference.cache
 c:\users\canada\documents\visual studio 2015\Projects\Assignment1\Assignment1.Tests\obj\Debug\Assignment1.Tests.dll
 c:\users\canada\documents\visual studio 2015\Projects\Assignment1\Assignment1.Tests\obj\Debug\Assignment1.Tests.pdb
+C:\Users\Canada\Documents\Visual Studio 2015\Projects\Assignment1\Assignment1.Tests\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Canada\Documents\Visual Studio 2015\Projects\Assignment1\Assignment1.Tests\bin\Debug\Microsoft.Owin.Security.Google.xml
