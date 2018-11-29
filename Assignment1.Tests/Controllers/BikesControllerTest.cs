@@ -197,16 +197,7 @@ namespace Assignment1.Tests.Controllers
 
 
 
-        [TestMethod]
-        public void ModelStateNotNullSavesNewRecord()
-        {
-            // act
-            Bike copiedBikeFromGlobal = bike;
-            RedirectToRouteResult result = (RedirectToRouteResult)controller.Create(copiedBikeFromGlobal);
-
-            // assert
-            Assert.AreEqual("Index", result.RouteValues["action"]);
-        }
+       
 
         [TestMethod]
         public void DeleteNoIdLoadsError()
@@ -244,7 +235,7 @@ namespace Assignment1.Tests.Controllers
             Bike result = (Bike)((ViewResult)controller.Delete(100)).Model;
 
             // assert
-            Assert.AreEqual(bikes[1], result);
+            Assert.AreEqual(bikes[0], result);
         }
 
 
