@@ -71,10 +71,25 @@ namespace Assignment1.Controllers
     public ActionResult Create([Bind(Include = "Bikes,Bike1,Bike2,Bike3")] Bike bike)
     {
         if (ModelState.IsValid)
-            { 
-            //  db.Bikes.Add(bike);
-            //db.SaveChanges();
-            db.Save(bike);
+            {
+                if (Request != null)
+                {
+                    if (Request.Files.Count > 0)
+                    {
+                        var file = Request.Files[0];
+
+                        if (file.FileName != null && file.ContentLength > 0)
+                        {
+                            // get file path dynamically
+                            string path = Server.MapPath("~/Content/Images/") + file.FileName;
+                            file.SaveAs(path);
+                        }
+                    }
+                }
+
+                //  db.Bikes.Add(bike);
+                //db.SaveChanges();
+                db.Save(bike);
             return RedirectToAction("Index");
         }
         ViewBag.Bikes= new SelectList(db.Bikes, "Bikes", "Name", bike.Bikes);

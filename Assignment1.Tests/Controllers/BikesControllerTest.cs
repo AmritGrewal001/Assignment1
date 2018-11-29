@@ -192,7 +192,7 @@ namespace Assignment1.Tests.Controllers
             var result = ((ViewResult)controller.Create());
 
             //assert
-            Assert.IsNotNull(result.ViewBag.ArtistId);
+            Assert.IsNotNull(result.ViewBag.Bikes);
         }
 
 
