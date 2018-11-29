@@ -244,7 +244,7 @@ namespace Assignment1.Tests.Controllers
         public void DeleteConfirmedIdLoadsError()
         {
             //Act
-            ViewResult result = (ViewResult)controller.DeleteConfirmed(-3);
+            ViewResult result = (ViewResult)controller.DeleteConfirmed(0);
 
             //Assert
             Assert.AreEqual("Error", result.ViewName);

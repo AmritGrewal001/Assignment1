@@ -168,7 +168,7 @@ namespace Assignment1.Controllers
                 //  return HttpNotFound();
                 return View("Error");
             }
-            return View(bike);
+            return View("Delete",bike);
         }
 
         //    // POST: Bikes/Delete/5
